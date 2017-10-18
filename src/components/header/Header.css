@@ -1,4 +1,7 @@
 .header-body {
-		border: 1px solid grey;
-		height: 120px;
+	display: flex;
+	flex-direction: row;
+	background-color: #03a9f4;
+	border: 1px solid grey;
+	height: 120px;
 }

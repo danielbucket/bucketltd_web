@@ -1,11 +1,13 @@
 import React from 'react';
-import './ChatterBox.css';
+import ChatterBoxApp from './chatterBoxApp/ChatterBoxApp'
+const styles = require('./ChatterBox.css');
 
 const ChatterBox = () => {
 
 	return (
-		<div className="chatterbox-body">
+		<div style={ styles }>
 			ChatterBox
+			<ChatterBoxApp />
 		</div>
 		)
 }

@@ -8,6 +8,7 @@ const Navbar = () => {
             >
       <img className="bucket-logo"
         			src={require("./images/bucket-icon-yellow-b.png")}
+              alt="bucket logo"
         			/>
       <h1 className="page-title">
         <span className="yellow"><span className="the-b">B</span>ucket</span>

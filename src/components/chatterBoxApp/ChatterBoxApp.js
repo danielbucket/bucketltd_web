@@ -13,16 +13,16 @@ export default class ChatterBoxApp extends Component {
 		}
 		this.onChange = this.onChange.bind(this);
 		this.onSubmit = this.onSubmit.bind(this);
-	}
+	};
 
 	onChange(val,type) {
 		this.setState({
 			[type]: val
 		})
-	}
+	};
 
 	onSubmit() {
-		fetch('/api/v1/login', {
+		fetch('/chatterbox/login', {
 			method: 'POST',
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({
@@ -34,7 +34,7 @@ export default class ChatterBoxApp extends Component {
 		.then(res => res.json())
 		.then(data => console.log("Data Schmata: ", data ))
 		.catch(error => console.log(`Error: ${ error }`))
-	}
+	};
 
 
 	render() {
@@ -48,4 +48,4 @@ export default class ChatterBoxApp extends Component {
 			</div>
 			)
 	}
-}
+};

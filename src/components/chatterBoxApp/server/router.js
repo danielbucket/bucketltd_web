@@ -1,12 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../../../../knexfile');
 
 const loginController = require('./controllers/loginController');
 
-router.get('/login', loginController.userLogin)
+router.post('/login', loginController.userLogin)
+router.get('/users', loginController.getAllUsers)
 
-module.exports = {
-	router,
-	db
-};
+module.exports = router;

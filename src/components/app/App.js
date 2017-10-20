@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('/users')
+    fetch('/chatterbox/users')
     .then(res => res.json())
     .then(data => console.log('data: ', data))
     .catch(error => console.log({ "error": error }))

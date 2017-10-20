@@ -19,14 +19,14 @@ export default class Login extends Component {
 		})
 	};
 
-login() {
-	this.props.onSubmit(this.state)
-	this.setState({
-		user_name: '',
-		user_email: '',
-		user_password: ''
-	})
-}
+	login() {
+		this.props.onSubmit(this.state)
+		this.setState({
+			user_name: '',
+			user_email: '',
+			user_password: ''
+		})
+	}
 
 	render() {
 		return (

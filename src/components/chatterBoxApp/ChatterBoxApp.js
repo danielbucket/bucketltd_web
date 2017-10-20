@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Login from './login/Login';
+import ChatModal from './chatModal/ChatModal';
 import './ChatterBoxApp.css';
 
 export default class ChatterBoxApp extends Component {
@@ -35,10 +36,16 @@ export default class ChatterBoxApp extends Component {
 
 
 	render() {
+		let ChatterBoxView = <ChatModal />
+		if(!this.state.loginStatus) {
+			ChatterBoxView = <Login onSubmit={this.onSubmit} />
+		}
+
+		console.log(ChatterBoxView)
 		return (
 			<div className="chatter-box-app-body">
 				ChatterBoxApp
-				<Login onSubmit={this.onSubmit} />
+				{ ChatterBoxView }
 			</div>
 			)
 	}

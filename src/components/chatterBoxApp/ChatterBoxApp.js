@@ -36,12 +36,12 @@ export default class ChatterBoxApp extends Component {
 
 
 	render() {
-		let ChatterBoxView = <ChatModal />
+		let ChatterBoxView = <ChatModal userData={this.state}/>
+
 		if(!this.state.loginStatus) {
 			ChatterBoxView = <Login onSubmit={this.onSubmit} />
 		}
 
-		console.log(ChatterBoxView)
 		return (
 			<div className="chatter-box-app-body">
 				ChatterBoxApp

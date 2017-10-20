@@ -12,13 +12,6 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
-    fetch('/chatterbox/users')
-    .then(res => res.json())
-    .then(data => console.log('data: ', data))
-    .catch(error => console.log({ "error": error }))
-  }
-
   render() {
     return (
       <div className="App">

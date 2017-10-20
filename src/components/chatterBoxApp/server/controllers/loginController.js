@@ -11,7 +11,7 @@ const userLogin = (req,res) => {
 	.select('user_password')
 	.then(password => {
 		if(password[0].user_password === user_password) {
-			return res.status(200).json(Object.assign(user, {loginStatus: true}))
+			return res.status(200).json(Object.assign(user, { loginStatus: true }))
 		} else {
 			return res.status(400).json({ error: "credentials not found"})
 		}

@@ -1,11 +1,13 @@
 {
-	"name": "ChatterBox",
-	"version": "0.1.0",
+"name": "ChatterBox",
+"version": "0.1.0",
  "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "knex": "^0.13.0",
     "nodemon": "^1.12.1",
-    "pg": "^7.3.0"
+    "pg": "^7.3.0",
+    "dotenv": "^4.0.0",
+    "jsonwebtoken": "^7.4.3"
   }
 }
